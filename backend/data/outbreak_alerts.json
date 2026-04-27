@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "region": "Punjab",
+    "crop": "Tomato",
+    "disease": "Late Blight",
+    "risk_level": "high",
+    "message_en": "High humidity and mild temperatures may trigger late blight spread. Start preventive spray.",
+    "message_ur": "زیادہ نمی اور معتدل درجہ حرارت لیٹ بلائٹ کے پھیلاؤ کا سبب بن سکتے ہیں۔ حفاظتی اسپرے شروع کریں۔",
+    "issued_at": "2026-04-24T12:00:00Z"
+  },
+  {
+    "id": 2,
+    "region": "Sindh",
+    "crop": "Rice",
+    "disease": "Bacterial Leaf Blight",
+    "risk_level": "medium",
+    "message_en": "Upcoming wet spell can increase bacterial leaf blight pressure in rice fields.",
+    "message_ur": "متوقع مرطوب موسم چاول کے کھیتوں میں بیکٹیریل لیف بلائٹ کا دباؤ بڑھا سکتا ہے۔",
+    "issued_at": "2026-04-24T12:00:00Z"
+  }
+]

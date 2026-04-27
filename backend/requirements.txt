@@ -1,0 +1,9 @@
+flask==3.1.0
+flask-cors==5.0.1
+numpy==2.1.1
+Pillow==11.0.0
+python-dotenv==1.0.1
+requests==2.32.3
+
+# Required for real CNN inference/training:
+tensorflow-cpu==2.21.0

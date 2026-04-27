@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Crop Disease Detection</title>
+    <style>
+      :root {
+        --bg-top: #d9f4dc;
+        --bg-bottom: #f5faee;
+        --panel: #ffffff;
+        --ink: #12261c;
+        --muted: #4f6858;
+        --line: #d8e7d5;
+        --accent: #0e8f4b;
+        --accent-dark: #0a6f39;
+        --warn: #a9441f;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 8% 10%, #e9ffe7 0%, transparent 30%),
+          radial-gradient(circle at 88% 2%, #c9f0d2 0%, transparent 22%),
+          linear-gradient(145deg, var(--bg-top), var(--bg-bottom));
+      }
+      .wrap {
+        max-width: 980px;
+        margin: 26px auto;
+        padding: 18px;
+      }
+      .hero,
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--panel);
+        box-shadow: 0 14px 35px rgba(15, 61, 31, 0.08);
+      }
+      .hero {
+        padding: 22px;
+        margin-bottom: 14px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.1;
+      }
+      p {
+        margin: 8px 0 0;
+        color: var(--muted);
+      }
+      .chips {
+        margin-top: 14px;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .chip {
+        border: 1px solid #c6e7cf;
+        background: #effbf2;
+        color: #1f5d37;
+        border-radius: 999px;
+        padding: 6px 12px;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .card {
+        padding: 20px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 12px;
+      }
+      label {
+        display: block;
+        margin: 0 0 7px;
+        font-size: 13px;
+        color: #2e4c3b;
+        font-weight: 700;
+      }
+      input,
+      select,
+      button {
+        width: 100%;
+        border-radius: 11px;
+        border: 1px solid var(--line);
+        padding: 10px 12px;
+        font-size: 15px;
+      }
+      button {
+        border: 0;
+        cursor: pointer;
+        font-weight: 700;
+      }
+      .btn-row {
+        margin-top: 14px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 10px;
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: #fff;
+      }
+      .btn-primary:hover {
+        background: var(--accent-dark);
+      }
+      .btn-secondary {
+        background: #eef5ee;
+        color: #1a4d2f;
+      }
+      .btn-secondary:hover {
+        background: #e2eee3;
+      }
+      .preview {
+        margin-top: 12px;
+        display: none;
+      }
+      .preview img {
+        width: 100%;
+        max-height: 280px;
+        object-fit: cover;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+      }
+      .result {
+        display: none;
+        margin-top: 14px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px;
+        background: #fdfefd;
+      }
+      .result h2 {
+        margin: 0;
+        font-size: 24px;
+      }
+      .badge {
+        display: inline-block;
+        margin-left: 10px;
+        padding: 4px 9px;
+        border-radius: 999px;
+        font-size: 12px;
+        background: #e8f6ec;
+        color: #155132;
+      }
+      .warn {
+        color: var(--warn);
+        font-weight: 700;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .subgrid {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 12px;
+      }
+      .subcard {
+        border: 1px solid #e6efe3;
+        border-radius: 12px;
+        padding: 10px;
+      }
+      ul {
+        margin: 8px 0 0;
+        padding-left: 18px;
+      }
+      .top3 {
+        margin-top: 8px;
+        border-radius: 10px;
+        padding: 8px 10px;
+        background: #f2f8f1;
+      }
+      @media (max-width: 640px) {
+        h1 {
+          font-size: 26px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="hero">
+        <h1>Smart Crop Disease Detection</h1>
+        <p>
+          Upload a leaf image and get instant prediction, confidence, and treatment guidance.
+        </p>
+        <div class="chips">
+          <span class="chip">Tomato</span>
+          <span class="chip">Potato</span>
+          <span class="chip">Maize</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <form id="predictForm">
+          <div class="grid">
+            <div>
+              <label for="farmerId">Farmer ID</label>
+              <input type="text" id="farmerId" placeholder="e.g. farmer-001" />
+            </div>
+            <div>
+              <label for="crop">Crop</label>
+              <select id="crop">
+                <option value="tomato">Tomato</option>
+                <option value="potato">Potato</option>
+                <option value="maize">Maize</option>
+              </select>
+            </div>
+            <div>
+              <label for="lang">Language</label>
+              <select id="lang">
+                <option value="en">English</option>
+                <option value="ur">Urdu</option>
+              </select>
+            </div>
+            <div>
+              <label for="latitude">Latitude (optional)</label>
+              <input type="text" id="latitude" placeholder="e.g. 31.5204" />
+            </div>
+            <div>
+              <label for="longitude">Longitude (optional)</label>
+              <input type="text" id="longitude" placeholder="e.g. 74.3587" />
+            </div>
+            <div>
+              <label for="image">Leaf image</label>
+              <input type="file" id="image" accept="image/*" required />
+            </div>
+          </div>
+          <div class="btn-row">
+            <button class="btn-primary" type="submit">Detect Disease</button>
+            <button class="btn-secondary" type="button" id="resetBtn">Search Again</button>
+            <button class="btn-secondary" type="button" id="downloadBtn" disabled>Download Result</button>
+          </div>
+        </form>
+
+        <div class="preview" id="preview">
+          <img id="previewImg" alt="Uploaded leaf preview" />
+        </div>
+
+        <div class="result" id="resultCard"></div>
+      </section>
+    </div>
+
+    <script>
+      const form = document.getElementById("predictForm");
+      const resultCard = document.getElementById("resultCard");
+      const resetBtn = document.getElementById("resetBtn");
+      const downloadBtn = document.getElementById("downloadBtn");
+      const imageInput = document.getElementById("image");
+      const preview = document.getElementById("preview");
+      const previewImg = document.getElementById("previewImg");
+
+      let latestResult = null;
+
+      const asList = (arr) => `<ul>${(arr || []).map((item) => `<li>${item}</li>`).join("")}</ul>`;
+
+      const toPercent = (value) => `${(Number(value || 0) * 100).toFixed(2)}%`;
+
+      const resetView = () => {
+        form.reset();
+        resultCard.style.display = "none";
+        resultCard.innerHTML = "";
+        latestResult = null;
+        downloadBtn.disabled = true;
+        preview.style.display = "none";
+        previewImg.src = "";
+      };
+
+      const downloadResult = () => {
+        if (!latestResult) return;
+        const lines = [
+          `Disease: ${latestResult.disease_name}`,
+          `Confidence: ${toPercent(latestResult.confidence)}`,
+          `Detected Crop: ${latestResult.crop_name}`,
+          `Pesticide: ${latestResult.recommendation?.pesticide ?? ""}`,
+          `Dosage: ${latestResult.recommendation?.dosage ?? ""}`,
+          "",
+          "Treatment Steps:",
+          ...(latestResult.recommendation?.treatment_steps ?? []).map((s) => `- ${s}`),
+          "",
+          "Prevention Tips:",
+          ...(latestResult.recommendation?.prevention_tips ?? []).map((s) => `- ${s}`),
+          "",
+          `Weather Risk: ${latestResult.weather_risk?.risk_level ?? "unknown"}`,
+          `Weather Note: ${latestResult.weather_risk?.message ?? ""}`,
+          latestResult.warning ? `Warning: ${latestResult.warning}` : "",
+        ];
+
+        const text = lines.filter(Boolean).join("\n");
+        const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `prediction-${new Date().toISOString().replace(/[:.]/g, "-")}.txt`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+      };
+
+      imageInput.addEventListener("change", () => {
+        const file = imageInput.files && imageInput.files[0];
+        if (!file) {
+          preview.style.display = "none";
+          previewImg.src = "";
+          return;
+        }
+        previewImg.src = URL.createObjectURL(file);
+        preview.style.display = "block";
+      });
+
+      resetBtn.addEventListener("click", resetView);
+      downloadBtn.addEventListener("click", downloadResult);
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const image = imageInput.files && imageInput.files[0];
+        if (!image) {
+          resultCard.style.display = "block";
+          resultCard.innerHTML = `<p class="warn">Please choose a leaf image.</p>`;
+          return;
+        }
+
+        const formData = new FormData();
+        formData.append("image", image);
+        formData.append("farmer_id", document.getElementById("farmerId").value || "anonymous");
+        formData.append("crop", document.getElementById("crop").value || "tomato");
+        formData.append("lang", document.getElementById("lang").value || "en");
+        formData.append("latitude", document.getElementById("latitude").value || "");
+        formData.append("longitude", document.getElementById("longitude").value || "");
+
+        resultCard.style.display = "block";
+        resultCard.innerHTML = "<p class='muted'>Analyzing image...</p>";
+
+        try {
+          const response = await fetch("/api/predict", {
+            method: "POST",
+            body: formData,
+          });
+          const data = await response.json();
+          if (!response.ok) {
+            throw new Error(data.error || "Prediction failed.");
+          }
+
+          latestResult = data;
+          downloadBtn.disabled = false;
+
+          const weather = data.weather_risk || {};
+          const top3 = (data.top_predictions || [])
+            .map((item) => `<div>${item.disease_key}: <strong>${toPercent(item.confidence)}</strong></div>`)
+            .join("");
+
+          resultCard.innerHTML = `
+            <h2>${data.disease_name}<span class="badge">${toPercent(data.confidence)}</span></h2>
+            <p><strong>Crop:</strong> ${data.crop_name}</p>
+            ${data.warning ? `<p class="warn">${data.warning}</p>` : ""}
+            <div class="top3"><strong>Top predictions</strong>${top3 || "<div>No alternatives available.</div>"}</div>
+            <div class="subgrid">
+              <div class="subcard">
+                <p><strong>Pesticide:</strong> ${data.recommendation.pesticide}</p>
+                <p><strong>Dosage:</strong> ${data.recommendation.dosage}</p>
+              </div>
+              <div class="subcard">
+                <p><strong>Weather risk:</strong> ${weather.risk_level || "unknown"}</p>
+                <p class="muted">${weather.message || ""}</p>
+              </div>
+            </div>
+            <p><strong>Treatment steps:</strong></p>
+            ${asList(data.recommendation.treatment_steps)}
+            <p><strong>Prevention tips:</strong></p>
+            ${asList(data.recommendation.prevention_tips)}
+          `;
+        } catch (error) {
+          latestResult = null;
+          downloadBtn.disabled = true;
+          resultCard.innerHTML = `<p class="warn"><strong>Error:</strong> ${error.message}</p>`;
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+.venv/
+.pydeps/
+__pycache__/
+*.pyc
+.env
+uploads/
+dataset/
+node_modules/
+dist/
+.expo/

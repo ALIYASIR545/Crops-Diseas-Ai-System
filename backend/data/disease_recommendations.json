@@ -1,0 +1,1094 @@
+{
+  "Unknown": {
+    "disease_name": {
+      "en": "Unknown disease pattern",
+      "ur": "نامعلوم بیماری کی علامات"
+    },
+    "crop_name": {
+      "en": "General crop",
+      "ur": "عمومی فصل"
+    },
+    "pesticide": {
+      "en": "Consult local agricultural officer before spraying.",
+      "ur": "اسپرے سے پہلے مقامی زرعی افسر سے مشورہ کریں۔"
+    },
+    "dosage": {
+      "en": "Use label instructions only.",
+      "ur": "صرف لیبل پر درج ہدایات کے مطابق استعمال کریں۔"
+    },
+    "treatment_steps": {
+      "en": [
+        "Remove heavily infected leaves.",
+        "Avoid overhead irrigation in evening.",
+        "Repeat observation after 48 hours."
+      ],
+      "ur": [
+        "زیادہ متاثرہ پتوں کو ہٹا دیں۔",
+        "شام کے وقت اوپر سے آبپاشی نہ کریں۔",
+        "48 گھنٹے بعد دوبارہ جائزہ لیں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use certified seed.",
+        "Maintain field sanitation.",
+        "Rotate crops seasonally."
+      ],
+      "ur": [
+        "تصدیق شدہ بیج استعمال کریں۔",
+        "کھیت کی صفائی برقرار رکھیں۔",
+        "موسمی بنیاد پر فصل کی گردش کریں۔"
+      ]
+    }
+  },
+  "Tomato___healthy": {
+    "disease_name": {
+      "en": "Healthy tomato leaf",
+      "ur": "ٹماٹر کا صحت مند پتا"
+    },
+    "crop_name": {
+      "en": "Tomato",
+      "ur": "ٹماٹر"
+    },
+    "pesticide": {
+      "en": "No pesticide required.",
+      "ur": "کسی زہر کی ضرورت نہیں۔"
+    },
+    "dosage": {
+      "en": "N/A",
+      "ur": "لاگو نہیں"
+    },
+    "treatment_steps": {
+      "en": [
+        "Continue balanced fertilization.",
+        "Monitor leaves every 3-4 days.",
+        "Irrigate in morning hours."
+      ],
+      "ur": [
+        "متوازن کھاد جاری رکھیں۔",
+        "ہر 3-4 دن بعد پتوں کا معائنہ کریں۔",
+        "صبح کے وقت آبپاشی کریں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Ensure proper spacing.",
+        "Avoid waterlogging.",
+        "Use disease-free seedlings."
+      ],
+      "ur": [
+        "پودوں میں مناسب فاصلہ رکھیں۔",
+        "کھیت میں پانی کھڑا نہ ہونے دیں۔",
+        "بیماری سے پاک پنیری استعمال کریں۔"
+      ]
+    }
+  },
+  "Tomato___Early_blight": {
+    "disease_name": {
+      "en": "Tomato Early Blight",
+      "ur": "ٹماٹر ارلی بلائٹ"
+    },
+    "crop_name": {
+      "en": "Tomato",
+      "ur": "ٹماٹر"
+    },
+    "pesticide": {
+      "en": "Mancozeb 80 WP",
+      "ur": "مینکوزیب 80 ڈبلیو پی"
+    },
+    "dosage": {
+      "en": "2.5 g per liter of water",
+      "ur": "2.5 گرام فی لیٹر پانی"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray at first visible concentric spots.",
+        "Repeat after 7 days if symptoms persist.",
+        "Remove lower infected leaves."
+      ],
+      "ur": [
+        "داغ نظر آتے ہی اسپرے کریں۔",
+        "علامات رہنے پر 7 دن بعد دوبارہ اسپرے کریں۔",
+        "نیچے کے متاثرہ پتے ہٹا دیں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Rotate with non-solanaceous crops.",
+        "Avoid leaf wetness for long periods.",
+        "Use resistant varieties where available."
+      ],
+      "ur": [
+        "سولینیشیئس کے علاوہ فصلوں سے گردش کریں۔",
+        "پتوں کو زیادہ دیر گیلا نہ رہنے دیں۔",
+        "ممکن ہو تو مزاحم اقسام استعمال کریں۔"
+      ]
+    }
+  },
+  "Tomato___Late_blight": {
+    "disease_name": {
+      "en": "Tomato Late Blight",
+      "ur": "ٹماٹر لیٹ بلائٹ"
+    },
+    "crop_name": {
+      "en": "Tomato",
+      "ur": "ٹماٹر"
+    },
+    "pesticide": {
+      "en": "Metalaxyl + Mancozeb",
+      "ur": "میٹالیکسل + مینکوزیب"
+    },
+    "dosage": {
+      "en": "2 g per liter of water",
+      "ur": "2 گرام فی لیٹر پانی"
+    },
+    "treatment_steps": {
+      "en": [
+        "Start spray immediately after detection.",
+        "Use 5-7 day spray interval in humid weather.",
+        "Destroy highly infected plants."
+      ],
+      "ur": [
+        "تشخیص ہوتے ہی فوری اسپرے کریں۔",
+        "مرطوب موسم میں 5-7 دن کے وقفے سے اسپرے کریں۔",
+        "زیادہ متاثرہ پودوں کو ختم کریں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Ensure field ventilation.",
+        "Avoid evening irrigation.",
+        "Use preventive fungicide in high-risk weather."
+      ],
+      "ur": [
+        "کھیت میں ہوا کی آمدورفت بہتر رکھیں۔",
+        "شام کی آبپاشی سے گریز کریں۔",
+        "زیادہ خطرے کے موسم میں حفاظتی پھپھوندی کش استعمال کریں۔"
+      ]
+    }
+  },
+  "Potato___healthy": {
+    "disease_name": {
+      "en": "Healthy potato leaf",
+      "ur": "آلو کا صحت مند پتا"
+    },
+    "crop_name": {
+      "en": "Potato",
+      "ur": "آلو"
+    },
+    "pesticide": {
+      "en": "No pesticide required.",
+      "ur": "کسی زہر کی ضرورت نہیں۔"
+    },
+    "dosage": {
+      "en": "N/A",
+      "ur": "لاگو نہیں"
+    },
+    "treatment_steps": {
+      "en": [
+        "Keep scouting weekly.",
+        "Maintain balanced NPK nutrition.",
+        "Use clean irrigation water."
+      ],
+      "ur": [
+        "ہفتہ وار نگرانی جاری رکھیں۔",
+        "متوازن این پی کے کھاد دیں۔",
+        "صاف آبپاشی کا پانی استعمال کریں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use certified seed tubers.",
+        "Remove volunteer plants.",
+        "Avoid excessive canopy humidity."
+      ],
+      "ur": [
+        "تصدیق شدہ بیج گانٹھیں استعمال کریں۔",
+        "خود رو پودوں کو ہٹا دیں۔",
+        "پتوں میں زیادہ نمی سے بچیں۔"
+      ]
+    }
+  },
+  "Potato___Early_blight": {
+    "disease_name": {
+      "en": "Potato Early Blight",
+      "ur": "آلو ارلی بلائٹ"
+    },
+    "crop_name": {
+      "en": "Potato",
+      "ur": "آلو"
+    },
+    "pesticide": {
+      "en": "Chlorothalonil",
+      "ur": "کلورتھالونل"
+    },
+    "dosage": {
+      "en": "2 ml per liter of water",
+      "ur": "2 ملی لیٹر فی لیٹر پانی"
+    },
+    "treatment_steps": {
+      "en": [
+        "Apply fungicide on first lesions.",
+        "Repeat spray every 7-10 days.",
+        "Remove and destroy infected foliage."
+      ],
+      "ur": [
+        "ابتدائی دھبوں پر فوری اسپرے کریں۔",
+        "7-10 دن کے وقفے سے اسپرے دہرائیں۔",
+        "متاثرہ پتوں کو ہٹا کر تلف کریں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use crop rotation of at least 2 years.",
+        "Avoid overhead irrigation.",
+        "Maintain proper plant spacing."
+      ],
+      "ur": [
+        "کم از کم 2 سال کی فصل گردش کریں۔",
+        "اوپر سے آبپاشی سے بچیں۔",
+        "پودوں میں مناسب فاصلہ رکھیں۔"
+      ]
+    }
+  },
+  "Potato___Late_blight": {
+    "disease_name": {
+      "en": "Potato Late Blight",
+      "ur": "آلو لیٹ بلائٹ"
+    },
+    "crop_name": {
+      "en": "Potato",
+      "ur": "آلو"
+    },
+    "pesticide": {
+      "en": "Cymoxanil + Mancozeb",
+      "ur": "سائموکسانل + مینکوزیب"
+    },
+    "dosage": {
+      "en": "2 g per liter of water",
+      "ur": "2 گرام فی لیٹر پانی"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray immediately and repeat in 5 days.",
+        "Remove severely affected plants.",
+        "Avoid irrigation when foliage is wet."
+      ],
+      "ur": [
+        "فوری اسپرے کریں اور 5 دن بعد دہرائیں۔",
+        "شدید متاثرہ پودے ہٹا دیں۔",
+        "پتے گیلے ہوں تو آبپاشی سے گریز کریں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use resistant seed where possible.",
+        "Ensure airflow through rows.",
+        "Monitor weather for high humidity periods."
+      ],
+      "ur": [
+        "ممکن ہو تو مزاحم بیج استعمال کریں۔",
+        "قطاروں میں ہوا کی آمدورفت رکھیں۔",
+        "زیادہ نمی والے موسم کی نگرانی کریں۔"
+      ]
+    }
+  },
+  "Corn_(maize)___healthy": {
+    "disease_name": {
+      "en": "Healthy maize leaf",
+      "ur": "مکئی کا صحت مند پتا"
+    },
+    "crop_name": {
+      "en": "Corn (Maize)",
+      "ur": "مکئی"
+    },
+    "pesticide": {
+      "en": "No pesticide required.",
+      "ur": "کسی زہر کی ضرورت نہیں۔"
+    },
+    "dosage": {
+      "en": "N/A",
+      "ur": "لاگو نہیں"
+    },
+    "treatment_steps": {
+      "en": [
+        "Continue regular monitoring.",
+        "Maintain proper fertilization.",
+        "Control weeds for better plant vigor."
+      ],
+      "ur": [
+        "باقاعدہ نگرانی جاری رکھیں۔",
+        "مناسب کھاد کا استعمال جاری رکھیں۔",
+        "پودے کی بہتر نشوونما کے لئے جڑی بوٹیوں کا کنٹرول کریں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use certified seed.",
+        "Keep balanced irrigation.",
+        "Scout field once a week."
+      ],
+      "ur": [
+        "تصدیق شدہ بیج استعمال کریں۔",
+        "متوازن آبپاشی برقرار رکھیں۔",
+        "ہفتے میں ایک بار کھیت کا معائنہ کریں۔"
+      ]
+    }
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "disease_name": {
+      "en": "Maize Cercospora Leaf Spot (Gray Leaf Spot)",
+      "ur": "مکئی سرکوسپورا لیف اسپاٹ (گرے لیف اسپاٹ)"
+    },
+    "crop_name": {
+      "en": "Corn (Maize)",
+      "ur": "مکئی"
+    },
+    "pesticide": {
+      "en": "Azoxystrobin + Propiconazole",
+      "ur": "ایزوکسی اسٹروبن + پروپیکونازول"
+    },
+    "dosage": {
+      "en": "1 ml per liter of water",
+      "ur": "1 ملی لیٹر فی لیٹر پانی"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray when rectangular gray lesions first appear.",
+        "Repeat spray in 7 to 10 days based on disease pressure.",
+        "Remove heavily infected lower leaves where feasible."
+      ],
+      "ur": [
+        "لمبے سرمئی دھبے ظاہر ہوتے ہی اسپرے کریں۔",
+        "بیماری کی شدت کے مطابق 7 سے 10 دن بعد اسپرے دہرائیں۔",
+        "ممکن ہو تو زیادہ متاثرہ نچلے پتے ہٹا دیں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use tolerant hybrids.",
+        "Avoid continuous maize monocropping.",
+        "Plough and decompose infected crop residue."
+      ],
+      "ur": [
+        "برداشت رکھنے والی اقسام منتخب کریں۔",
+        "مسلسل ایک ہی فصل (مکئی) سے گریز کریں۔",
+        "متاثرہ باقیات کو ہل چلا کر مٹی میں دبائیں۔"
+      ]
+    }
+  },
+  "Corn_(maize)___Common_rust_": {
+    "disease_name": {
+      "en": "Maize Common Rust",
+      "ur": "مکئی کامن رسٹ"
+    },
+    "crop_name": {
+      "en": "Corn (Maize)",
+      "ur": "مکئی"
+    },
+    "pesticide": {
+      "en": "Propiconazole",
+      "ur": "پروپیکونازول"
+    },
+    "dosage": {
+      "en": "1 ml per liter of water",
+      "ur": "1 ملی لیٹر فی لیٹر پانی"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray at initial pustule stage.",
+        "Repeat after 10 days if needed.",
+        "Focus on lower and middle leaves."
+      ],
+      "ur": [
+        "ابتدائی رسٹ دھبوں پر اسپرے کریں۔",
+        "ضرورت ہو تو 10 دن بعد دہرائیں۔",
+        "نچلے اور درمیانی پتوں پر توجہ دیں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Prefer tolerant hybrids.",
+        "Avoid dense planting.",
+        "Remove alternate host weeds."
+      ],
+      "ur": [
+        "برداشت رکھنے والی اقسام منتخب کریں۔",
+        "زیادہ گھنی کاشت سے بچیں۔",
+        "متبادل میزبان جڑی بوٹیاں ختم کریں۔"
+      ]
+    }
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "disease_name": {
+      "en": "Maize Northern Leaf Blight",
+      "ur": "مکئی نادرن لیف بلائٹ"
+    },
+    "crop_name": {
+      "en": "Corn (Maize)",
+      "ur": "مکئی"
+    },
+    "pesticide": {
+      "en": "Azoxystrobin",
+      "ur": "ایزوکسی اسٹروبن"
+    },
+    "dosage": {
+      "en": "1 ml per liter of water",
+      "ur": "1 ملی لیٹر فی لیٹر پانی"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray when elongated lesions appear.",
+        "Repeat with label interval.",
+        "Remove heavily infected leaves."
+      ],
+      "ur": [
+        "لمبے دھبے ظاہر ہوتے ہی اسپرے کریں۔",
+        "لیبل کے مطابق وقفے سے دہرائیں۔",
+        "زیادہ متاثرہ پتے ہٹا دیں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Deep plough crop residues.",
+        "Rotate crops after harvest.",
+        "Keep balanced nitrogen application."
+      ],
+      "ur": [
+        "فصل کی باقیات کو گہرا ہل چلا کر دبائیں۔",
+        "کٹائی کے بعد فصل گردش کریں۔",
+        "نائٹروجن کا متوازن استعمال کریں۔"
+      ]
+    }
+  },
+  "Wheat___healthy": {
+    "disease_name": {
+      "en": "Healthy wheat leaf",
+      "ur": "گندم کا صحت مند پتا"
+    },
+    "crop_name": {
+      "en": "Wheat",
+      "ur": "گندم"
+    },
+    "pesticide": {
+      "en": "No pesticide required.",
+      "ur": "کسی زہر کی ضرورت نہیں۔"
+    },
+    "dosage": {
+      "en": "N/A",
+      "ur": "لاگو نہیں"
+    },
+    "treatment_steps": {
+      "en": [
+        "Continue crop scouting.",
+        "Apply recommended nutrition.",
+        "Maintain proper irrigation schedule."
+      ],
+      "ur": [
+        "فصل کی نگرانی جاری رکھیں۔",
+        "تجویز کردہ غذائی عناصر دیں۔",
+        "مناسب آبپاشی شیڈول برقرار رکھیں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use clean seed.",
+        "Follow sowing window for your area.",
+        "Avoid excess nitrogen."
+      ],
+      "ur": [
+        "صاف بیج استعمال کریں۔",
+        "اپنے علاقے کے مطابق کاشت کا وقت اختیار کریں۔",
+        "زیادہ نائٹروجن سے بچیں۔"
+      ]
+    }
+  },
+  "Wheat___Leaf_Rust": {
+    "disease_name": {
+      "en": "Wheat Leaf Rust",
+      "ur": "گندم لیف رسٹ"
+    },
+    "crop_name": {
+      "en": "Wheat",
+      "ur": "گندم"
+    },
+    "pesticide": {
+      "en": "Tebuconazole",
+      "ur": "ٹیبوکونازول"
+    },
+    "dosage": {
+      "en": "0.75 ml per liter of water",
+      "ur": "0.75 ملی لیٹر فی لیٹر پانی"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray at first rust pustules.",
+        "Re-spray after 10-14 days in severe cases.",
+        "Target flag leaf protection."
+      ],
+      "ur": [
+        "رسٹ کے ابتدائی دھبوں پر اسپرے کریں۔",
+        "شدید صورت میں 10-14 دن بعد دوبارہ اسپرے کریں۔",
+        "فلیگ لیف کے تحفظ پر خاص توجہ دیں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Grow rust-resistant varieties.",
+        "Avoid late sowing where rust pressure is high.",
+        "Monitor humidity and dew-heavy weeks."
+      ],
+      "ur": [
+        "رسٹ مزاحم اقسام اگائیں۔",
+        "جہاں رسٹ زیادہ ہو وہاں دیر سے کاشت نہ کریں۔",
+        "زیادہ نمی اور اوس والے ہفتوں کی نگرانی کریں۔"
+      ]
+    }
+  },
+  "Wheat___Powdery_Mildew": {
+    "disease_name": {
+      "en": "Wheat Powdery Mildew",
+      "ur": "گندم پاوڈری میلڈیو"
+    },
+    "crop_name": {
+      "en": "Wheat",
+      "ur": "گندم"
+    },
+    "pesticide": {
+      "en": "Triadimefon",
+      "ur": "ٹرائیڈائمفون"
+    },
+    "dosage": {
+      "en": "0.5 g per liter of water",
+      "ur": "0.5 گرام فی لیٹر پانی"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray when white powder appears on leaves.",
+        "Repeat according to disease severity.",
+        "Avoid excessive canopy humidity."
+      ],
+      "ur": [
+        "پتوں پر سفید سفوف ظاہر ہوتے ہی اسپرے کریں۔",
+        "شدت کے مطابق اسپرے دہرائیں۔",
+        "پتوں میں زیادہ نمی سے بچیں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Maintain proper spacing.",
+        "Avoid excess nitrogen.",
+        "Select tolerant varieties."
+      ],
+      "ur": [
+        "مناسب فاصلہ رکھیں۔",
+        "زیادہ نائٹروجن سے بچیں۔",
+        "برداشت رکھنے والی اقسام منتخب کریں۔"
+      ]
+    }
+  },
+  "Rice___healthy": {
+    "disease_name": {
+      "en": "Healthy rice leaf",
+      "ur": "چاول کا صحت مند پتا"
+    },
+    "crop_name": {
+      "en": "Rice",
+      "ur": "چاول"
+    },
+    "pesticide": {
+      "en": "No pesticide required.",
+      "ur": "کسی زہر کی ضرورت نہیں۔"
+    },
+    "dosage": {
+      "en": "N/A",
+      "ur": "لاگو نہیں"
+    },
+    "treatment_steps": {
+      "en": [
+        "Maintain water and nutrient balance.",
+        "Inspect field twice weekly.",
+        "Remove volunteer diseased plants."
+      ],
+      "ur": [
+        "پانی اور غذائیت کا توازن برقرار رکھیں۔",
+        "ہفتے میں دو بار کھیت کا معائنہ کریں۔",
+        "بیمار خود رو پودے ہٹا دیں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use certified nursery seedlings.",
+        "Avoid excessive nitrogen top dressing.",
+        "Maintain proper drainage."
+      ],
+      "ur": [
+        "تصدیق شدہ نرسری پودے استعمال کریں۔",
+        "اوپر سے زیادہ نائٹروجن دینے سے بچیں۔",
+        "پانی کی نکاسی بہتر رکھیں۔"
+      ]
+    }
+  },
+  "Rice___Bacterial_Leaf_Blight": {
+    "disease_name": {
+      "en": "Rice Bacterial Leaf Blight",
+      "ur": "چاول بیکٹیریل لیف بلائٹ"
+    },
+    "crop_name": {
+      "en": "Rice",
+      "ur": "چاول"
+    },
+    "pesticide": {
+      "en": "Copper oxychloride (supportive) + agronomic control",
+      "ur": "کاپر آکسی کلورائیڈ (مددگار) + زرعی انتظام"
+    },
+    "dosage": {
+      "en": "2.5 g per liter of water",
+      "ur": "2.5 گرام فی لیٹر پانی"
+    },
+    "treatment_steps": {
+      "en": [
+        "Drain excess standing water if possible.",
+        "Avoid injury-causing operations in wet conditions.",
+        "Apply recommended bactericide as per extension advice."
+      ],
+      "ur": [
+        "ممکن ہو تو کھیت سے اضافی کھڑا پانی نکالیں۔",
+        "گیلے حالات میں پودوں کو زخمی کرنے والے کام نہ کریں۔",
+        "زرعی مشورے کے مطابق مناسب دوا استعمال کریں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use resistant cultivars.",
+        "Use balanced nitrogen and potassium.",
+        "Use clean seeds and field hygiene."
+      ],
+      "ur": [
+        "مزاحم اقسام استعمال کریں۔",
+        "نائٹروجن اور پوٹاش کا متوازن استعمال کریں۔",
+        "صاف بیج اور کھیت کی صفائی اختیار کریں۔"
+      ]
+    }
+  },
+  "Rice___Brown_Spot": {
+    "disease_name": {
+      "en": "Rice Brown Spot",
+      "ur": "چاول براؤن اسپاٹ"
+    },
+    "crop_name": {
+      "en": "Rice",
+      "ur": "چاول"
+    },
+    "pesticide": {
+      "en": "Carbendazim",
+      "ur": "کاربینڈازم"
+    },
+    "dosage": {
+      "en": "1 g per liter of water",
+      "ur": "1 گرام فی لیٹر پانی"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray at early lesion stage.",
+        "Repeat spray in 10 days if needed.",
+        "Correct nutrient deficiencies."
+      ],
+      "ur": [
+        "ابتدائی دھبوں پر اسپرے کریں۔",
+        "ضرورت ہو تو 10 دن بعد اسپرے دہرائیں۔",
+        "غذائی کمی کو درست کریں۔"
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use disease-free seed.",
+        "Maintain potassium nutrition.",
+        "Avoid drought stress."
+      ],
+      "ur": [
+        "بیماری سے پاک بیج استعمال کریں۔",
+        "پوٹاش کی مناسب مقدار برقرار رکھیں۔",
+        "خشکی کے دباؤ سے بچائیں۔"
+      ]
+    }
+  },
+  "Pepper__bell___Bacterial_spot": {
+    "disease_name": {
+      "en": "Pepper Bell Bacterial Spot",
+      "ur": "Pepper Bell Bacterial Spot"
+    },
+    "crop_name": {
+      "en": "Pepper",
+      "ur": "Pepper"
+    },
+    "pesticide": {
+      "en": "Copper oxychloride",
+      "ur": "Copper oxychloride"
+    },
+    "dosage": {
+      "en": "2 g per liter of water",
+      "ur": "2 g per liter of water"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray at first water-soaked lesions.",
+        "Repeat after 7 days if symptoms continue.",
+        "Remove heavily infected leaves."
+      ],
+      "ur": [
+        "Spray at first water-soaked lesions.",
+        "Repeat after 7 days if symptoms continue.",
+        "Remove heavily infected leaves."
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use clean seed and avoid overhead irrigation.",
+        "Disinfect tools and avoid working in wet foliage.",
+        "Rotate crops and remove infected debris."
+      ],
+      "ur": [
+        "Use clean seed and avoid overhead irrigation.",
+        "Disinfect tools and avoid working in wet foliage.",
+        "Rotate crops and remove infected debris."
+      ]
+    }
+  },
+  "Pepper__bell___healthy": {
+    "disease_name": {
+      "en": "Healthy pepper leaf",
+      "ur": "Healthy pepper leaf"
+    },
+    "crop_name": {
+      "en": "Pepper",
+      "ur": "Pepper"
+    },
+    "pesticide": {
+      "en": "No pesticide required.",
+      "ur": "No pesticide required."
+    },
+    "dosage": {
+      "en": "N/A",
+      "ur": "N/A"
+    },
+    "treatment_steps": {
+      "en": [
+        "Continue balanced irrigation and fertilizer schedule.",
+        "Monitor leaves every 3-4 days.",
+        "Maintain field hygiene."
+      ],
+      "ur": [
+        "Continue balanced irrigation and fertilizer schedule.",
+        "Monitor leaves every 3-4 days.",
+        "Maintain field hygiene."
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use disease-free seedlings.",
+        "Avoid prolonged leaf wetness.",
+        "Improve airflow in the canopy."
+      ],
+      "ur": [
+        "Use disease-free seedlings.",
+        "Avoid prolonged leaf wetness.",
+        "Improve airflow in the canopy."
+      ]
+    }
+  },
+  "Tomato__Target_Spot": {
+    "disease_name": {
+      "en": "Tomato Target Spot",
+      "ur": "Tomato Target Spot"
+    },
+    "crop_name": {
+      "en": "Tomato",
+      "ur": "Tomato"
+    },
+    "pesticide": {
+      "en": "Azoxystrobin",
+      "ur": "Azoxystrobin"
+    },
+    "dosage": {
+      "en": "1 ml per liter of water",
+      "ur": "1 ml per liter of water"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray at initial circular lesions.",
+        "Repeat every 7 to 10 days in humid weather.",
+        "Remove infected lower leaves."
+      ],
+      "ur": [
+        "Spray at initial circular lesions.",
+        "Repeat every 7 to 10 days in humid weather.",
+        "Remove infected lower leaves."
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Avoid dense planting.",
+        "Reduce leaf wetness duration.",
+        "Remove crop residue after harvest."
+      ],
+      "ur": [
+        "Avoid dense planting.",
+        "Reduce leaf wetness duration.",
+        "Remove crop residue after harvest."
+      ]
+    }
+  },
+  "Tomato__Tomato_mosaic_virus": {
+    "disease_name": {
+      "en": "Tomato Mosaic Virus",
+      "ur": "Tomato Mosaic Virus"
+    },
+    "crop_name": {
+      "en": "Tomato",
+      "ur": "Tomato"
+    },
+    "pesticide": {
+      "en": "No direct curative pesticide. Use vector and hygiene management.",
+      "ur": "No direct curative pesticide. Use vector and hygiene management."
+    },
+    "dosage": {
+      "en": "N/A",
+      "ur": "N/A"
+    },
+    "treatment_steps": {
+      "en": [
+        "Remove and destroy infected plants early.",
+        "Control insect vectors in the field.",
+        "Disinfect tools and avoid mechanical spread."
+      ],
+      "ur": [
+        "Remove and destroy infected plants early.",
+        "Control insect vectors in the field.",
+        "Disinfect tools and avoid mechanical spread."
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use certified virus-free seedlings.",
+        "Control weeds that host viruses.",
+        "Avoid handling plants when wet."
+      ],
+      "ur": [
+        "Use certified virus-free seedlings.",
+        "Control weeds that host viruses.",
+        "Avoid handling plants when wet."
+      ]
+    }
+  },
+  "Tomato__Tomato_YellowLeaf__Curl_Virus": {
+    "disease_name": {
+      "en": "Tomato Yellow Leaf Curl Virus",
+      "ur": "Tomato Yellow Leaf Curl Virus"
+    },
+    "crop_name": {
+      "en": "Tomato",
+      "ur": "Tomato"
+    },
+    "pesticide": {
+      "en": "Imidacloprid (for whitefly vector control)",
+      "ur": "Imidacloprid (for whitefly vector control)"
+    },
+    "dosage": {
+      "en": "0.3 ml per liter of water",
+      "ur": "0.3 ml per liter of water"
+    },
+    "treatment_steps": {
+      "en": [
+        "Rogue infected plants at early stage.",
+        "Control whitefly population quickly.",
+        "Use reflective mulch where possible."
+      ],
+      "ur": [
+        "Rogue infected plants at early stage.",
+        "Control whitefly population quickly.",
+        "Use reflective mulch where possible."
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use resistant varieties.",
+        "Install yellow sticky traps.",
+        "Manage weeds around field borders."
+      ],
+      "ur": [
+        "Use resistant varieties.",
+        "Install yellow sticky traps.",
+        "Manage weeds around field borders."
+      ]
+    }
+  },
+  "Tomato_Bacterial_spot": {
+    "disease_name": {
+      "en": "Tomato Bacterial Spot",
+      "ur": "Tomato Bacterial Spot"
+    },
+    "crop_name": {
+      "en": "Tomato",
+      "ur": "Tomato"
+    },
+    "pesticide": {
+      "en": "Copper hydroxide + Mancozeb",
+      "ur": "Copper hydroxide + Mancozeb"
+    },
+    "dosage": {
+      "en": "2 g per liter of water",
+      "ur": "2 g per liter of water"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray at first black spots with yellow halo.",
+        "Repeat in 7 days during humid periods.",
+        "Avoid overhead irrigation."
+      ],
+      "ur": [
+        "Spray at first black spots with yellow halo.",
+        "Repeat in 7 days during humid periods.",
+        "Avoid overhead irrigation."
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use disease-free transplants.",
+        "Sanitize stakes and tools.",
+        "Do not work in field when leaves are wet."
+      ],
+      "ur": [
+        "Use disease-free transplants.",
+        "Sanitize stakes and tools.",
+        "Do not work in field when leaves are wet."
+      ]
+    }
+  },
+  "Tomato_Leaf_Mold": {
+    "disease_name": {
+      "en": "Tomato Leaf Mold",
+      "ur": "Tomato Leaf Mold"
+    },
+    "crop_name": {
+      "en": "Tomato",
+      "ur": "Tomato"
+    },
+    "pesticide": {
+      "en": "Chlorothalonil",
+      "ur": "Chlorothalonil"
+    },
+    "dosage": {
+      "en": "2 ml per liter of water",
+      "ur": "2 ml per liter of water"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray when olive-green mold appears on leaf underside.",
+        "Remove infected leaves for canopy ventilation.",
+        "Repeat at 7 day interval."
+      ],
+      "ur": [
+        "Spray when olive-green mold appears on leaf underside.",
+        "Remove infected leaves for canopy ventilation.",
+        "Repeat at 7 day interval."
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Reduce greenhouse/field humidity.",
+        "Improve air movement between plants.",
+        "Avoid wetting leaves late in day."
+      ],
+      "ur": [
+        "Reduce greenhouse/field humidity.",
+        "Improve air movement between plants.",
+        "Avoid wetting leaves late in day."
+      ]
+    }
+  },
+  "Tomato_Septoria_leaf_spot": {
+    "disease_name": {
+      "en": "Tomato Septoria Leaf Spot",
+      "ur": "Tomato Septoria Leaf Spot"
+    },
+    "crop_name": {
+      "en": "Tomato",
+      "ur": "Tomato"
+    },
+    "pesticide": {
+      "en": "Mancozeb",
+      "ur": "Mancozeb"
+    },
+    "dosage": {
+      "en": "2.5 g per liter of water",
+      "ur": "2.5 g per liter of water"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray at early small round lesions.",
+        "Repeat at 7 to 10 day intervals.",
+        "Remove heavily infected lower leaves."
+      ],
+      "ur": [
+        "Spray at early small round lesions.",
+        "Repeat at 7 to 10 day intervals.",
+        "Remove heavily infected lower leaves."
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Use mulching to reduce splash spread.",
+        "Rotate fields with non-host crops.",
+        "Destroy crop residue after season."
+      ],
+      "ur": [
+        "Use mulching to reduce splash spread.",
+        "Rotate fields with non-host crops.",
+        "Destroy crop residue after season."
+      ]
+    }
+  },
+  "Tomato_Spider_mites_Two_spotted_spider_mite": {
+    "disease_name": {
+      "en": "Tomato Spider Mites (Two-Spotted)",
+      "ur": "Tomato Spider Mites (Two-Spotted)"
+    },
+    "crop_name": {
+      "en": "Tomato",
+      "ur": "Tomato"
+    },
+    "pesticide": {
+      "en": "Abamectin",
+      "ur": "Abamectin"
+    },
+    "dosage": {
+      "en": "0.5 ml per liter of water",
+      "ur": "0.5 ml per liter of water"
+    },
+    "treatment_steps": {
+      "en": [
+        "Spray underside of leaves where mites are active.",
+        "Repeat after 5 to 7 days if needed.",
+        "Use adequate water volume for full coverage."
+      ],
+      "ur": [
+        "Spray underside of leaves where mites are active.",
+        "Repeat after 5 to 7 days if needed.",
+        "Use adequate water volume for full coverage."
+      ]
+    },
+    "prevention_tips": {
+      "en": [
+        "Control dust and moisture stress.",
+        "Monitor mite population weekly.",
+        "Avoid repeated use of same acaricide group."
+      ],
+      "ur": [
+        "Control dust and moisture stress.",
+        "Monitor mite population weekly.",
+        "Avoid repeated use of same acaricide group."
+      ]
+    }
+  }
+}
