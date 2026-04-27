@@ -1,4 +1,4 @@
-# Smart Crop Disease AI System (Pakistan FYP)
+# Smart Crop Disease AI System 
 
 This project now includes a complete prototype with:
 
