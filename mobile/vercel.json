@@ -3,8 +3,5 @@
     "output": "dist",
     "command": "npx expo export --platform web"
   },
-  "install": {
-    "command": "pnpm install"
-  },
   "framework": "expo"
 }
