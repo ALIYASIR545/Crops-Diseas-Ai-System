@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify, request
 
 from config import Config
-from utils.db import fetch_history
+from utils.db import delete_history_item, fetch_history
 from utils.prediction import get_recommendation_for_key
 
 history_bp = Blueprint("history", __name__)
@@ -9,6 +9,7 @@ history_bp = Blueprint("history", __name__)
 
 @history_bp.get("/history")
 def history():
+    # Query params used by history listing card/screens.
     farmer_id = request.args.get("farmer_id", "").strip()
     lang = request.args.get("lang", "en").strip().lower()
     limit = request.args.get("limit", "20").strip()
@@ -36,3 +37,13 @@ def history():
         )
 
     return jsonify({"count": len(results), "items": results})
+
+
+@history_bp.delete("/history/<int:history_id>")
+def delete_history(history_id: int):
+    # Optional farmer check allows "delete only my record" behavior from client.
+    farmer_id = request.args.get("farmer_id", "").strip() or None
+    deleted = delete_history_item(Config.DATABASE_PATH, history_id=history_id, farmer_id=farmer_id)
+    if deleted == 0:
+        return jsonify({"error": "History record not found."}), 404
+    return jsonify({"message": "History record deleted successfully.", "deleted_id": history_id})

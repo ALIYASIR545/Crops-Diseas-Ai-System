@@ -186,6 +186,7 @@
   </head>
   <body>
     <div class="wrap">
+      <!-- Hero Card: project title and supported crop badges -->
       <section class="hero">
         <h1>Smart Crop Disease Detection</h1>
         <p>
@@ -198,6 +199,7 @@
         </div>
       </section>
 
+      <!-- Main Form Card: upload and prediction controls -->
       <section class="card">
         <form id="predictForm">
           <div class="grid">
@@ -240,10 +242,12 @@
           </div>
         </form>
 
+        <!-- Preview Card: selected leaf image before analysis -->
         <div class="preview" id="preview">
           <img id="previewImg" alt="Uploaded leaf preview" />
         </div>
 
+        <!-- Result Card: disease, confidence, treatment and weather -->
         <div class="result" id="resultCard"></div>
       </section>
     </div>
@@ -263,6 +267,7 @@
 
       const toPercent = (value) => `${(Number(value || 0) * 100).toFixed(2)}%`;
 
+      // Reset the form to a fresh "new search" state.
       const resetView = () => {
         form.reset();
         resultCard.style.display = "none";
@@ -273,6 +278,7 @@
         previewImg.src = "";
       };
 
+      // Export latest prediction details as a text report.
       const downloadResult = () => {
         if (!latestResult) return;
         const lines = [
@@ -319,6 +325,7 @@
       resetBtn.addEventListener("click", resetView);
       downloadBtn.addEventListener("click", downloadResult);
 
+      // Main submit flow: upload image, call API, render cards.
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
 

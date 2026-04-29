@@ -70,3 +70,25 @@ def fetch_history(db_path: Path, farmer_id: Optional[str], limit: int) -> List[D
             ).fetchall()
 
     return [dict(row) for row in rows]
+
+
+def delete_history_item(db_path: Path, history_id: int, farmer_id: Optional[str] = None) -> int:
+    with sqlite3.connect(db_path) as conn:
+        if farmer_id:
+            cur = conn.execute(
+                """
+                DELETE FROM predictions
+                WHERE id = ? AND farmer_id = ?
+                """,
+                (history_id, farmer_id),
+            )
+        else:
+            cur = conn.execute(
+                """
+                DELETE FROM predictions
+                WHERE id = ?
+                """,
+                (history_id,),
+            )
+        conn.commit()
+        return int(cur.rowcount)

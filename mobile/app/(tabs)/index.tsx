@@ -13,7 +13,8 @@ import {
 } from 'react-native';
 
 const API_BASE_URL =
-  Platform.OS === 'android' ? 'http://10.0.2.2:5000' : 'http://127.0.0.1:5000';
+  process.env.EXPO_PUBLIC_API_BASE_URL ||
+  (Platform.OS === 'android' ? 'http://10.0.2.2:5000' : 'http://127.0.0.1:5000');
 
 type Language = 'en' | 'ur';
 type CropOption = 'tomato' | 'potato' | 'maize';
@@ -74,6 +75,7 @@ const textPack = {
 };
 
 export default function DetectionScreen() {
+  // Core state for detection form, image selection, and rendered result card.
   const [lang, setLang] = useState<Language>('en');
   const [farmerId, setFarmerId] = useState('farmer-001');
   const [crop, setCrop] = useState<CropOption>('tomato');
@@ -88,6 +90,7 @@ export default function DetectionScreen() {
   const t = textPack[lang];
 
   const pickImage = async () => {
+    // Opens gallery and stores local URI for preview + upload.
     setError('');
     const permission = await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (!permission.granted) {
@@ -106,6 +109,7 @@ export default function DetectionScreen() {
   };
 
   const analyzeImage = async () => {
+    // Sends multipart form to backend and renders response card.
     if (!imageUri) {
       setError(t.noImage);
       return;
@@ -156,6 +160,7 @@ export default function DetectionScreen() {
   };
 
   const resetSearch = () => {
+    // Quick reset action after a completed search.
     setLatitude('');
     setLongitude('');
     setImageUri(null);
@@ -165,9 +170,11 @@ export default function DetectionScreen() {
 
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
+      {/* Header block */}
       <Text style={styles.title}>{t.title}</Text>
       <Text style={styles.subtitle}>{t.subtitle}</Text>
 
+      {/* Language selector block */}
       <View style={styles.langRow}>
         <Text style={styles.label}>{t.language}</Text>
         <View style={styles.langButtons}>
@@ -187,6 +194,7 @@ export default function DetectionScreen() {
       <Text style={styles.label}>{t.farmerId}</Text>
       <TextInput style={styles.input} value={farmerId} onChangeText={setFarmerId} />
 
+      {/* Crop selector block (fixed to tomato/potato/maize) */}
       <Text style={styles.label}>{t.crop}</Text>
       <View style={styles.cropRow}>
         {(['tomato', 'potato', 'maize'] as CropOption[]).map((option) => (
@@ -207,12 +215,14 @@ export default function DetectionScreen() {
       <Text style={styles.label}>{t.longitude}</Text>
       <TextInput style={styles.input} value={longitude} onChangeText={setLongitude} />
 
+      {/* Image upload block */}
       <TouchableOpacity style={styles.secondaryBtn} onPress={pickImage}>
         <Text style={styles.secondaryBtnText}>{t.chooseImage}</Text>
       </TouchableOpacity>
 
       {imageUri ? <Image source={{ uri: imageUri }} style={styles.preview} /> : null}
 
+      {/* Action buttons block */}
       <TouchableOpacity style={styles.primaryBtn} onPress={analyzeImage}>
         <Text style={styles.primaryBtnText}>{t.analyze}</Text>
       </TouchableOpacity>
@@ -223,6 +233,7 @@ export default function DetectionScreen() {
       {loading ? <ActivityIndicator size="large" color="#177245" style={{ marginTop: 12 }} /> : null}
       {error ? <Text style={styles.error}>{error}</Text> : null}
 
+      {/* Result card block */}
       {result ? (
         <View style={styles.resultCard}>
           <Text style={styles.resultTitle}>

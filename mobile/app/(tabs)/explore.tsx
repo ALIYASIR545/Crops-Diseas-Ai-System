@@ -11,7 +11,8 @@ import {
 } from 'react-native';
 
 const API_BASE_URL =
-  Platform.OS === 'android' ? 'http://10.0.2.2:5000' : 'http://127.0.0.1:5000';
+  process.env.EXPO_PUBLIC_API_BASE_URL ||
+  (Platform.OS === 'android' ? 'http://10.0.2.2:5000' : 'http://127.0.0.1:5000');
 
 type HistoryItem = {
   id: number;
@@ -34,6 +35,7 @@ type AlertItem = {
 };
 
 export default function HistoryScreen() {
+  // Form and view state for history/alerts screen.
   const [farmerId, setFarmerId] = useState('farmer-001');
   const [history, setHistory] = useState<HistoryItem[]>([]);
   const [alerts, setAlerts] = useState<AlertItem[]>([]);
@@ -41,6 +43,7 @@ export default function HistoryScreen() {
   const [error, setError] = useState('');
 
   const loadHistory = async () => {
+    // Load both cards in parallel: detection history + outbreak alerts.
     setLoading(true);
     setError('');
 
@@ -69,6 +72,24 @@ export default function HistoryScreen() {
     }
   };
 
+  const deleteHistoryRow = async (historyId: number) => {
+    // Delete one history item and update local list immediately.
+    try {
+      setError('');
+      const response = await fetch(
+        `${API_BASE_URL}/api/history/${historyId}?farmer_id=${encodeURIComponent(farmerId)}`,
+        { method: 'DELETE' },
+      );
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to delete history item.');
+      }
+      setHistory((prev) => prev.filter((item) => item.id !== historyId));
+    } catch (err: any) {
+      setError(err.message || 'Delete failed.');
+    }
+  };
+
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
       <Text style={styles.title}>History and Alerts</Text>
@@ -84,6 +105,7 @@ export default function HistoryScreen() {
       {error ? <Text style={styles.error}>{error}</Text> : null}
 
       <View style={styles.card}>
+        {/* Card 1: prediction history list */}
         <Text style={styles.cardTitle}>Detection History</Text>
         {history.length === 0 ? (
           <Text style={styles.muted}>No records yet.</Text>
@@ -97,12 +119,16 @@ export default function HistoryScreen() {
                 {item.weather_risk}
               </Text>
               <Text style={styles.muted}>{item.created_at}</Text>
+              <TouchableOpacity style={styles.deleteBtn} onPress={() => deleteHistoryRow(item.id)}>
+                <Text style={styles.deleteBtnText}>Delete</Text>
+              </TouchableOpacity>
             </View>
           ))
         )}
       </View>
 
       <View style={styles.card}>
+        {/* Card 2: active disease alerts */}
         <Text style={styles.cardTitle}>Real-Time Alerts</Text>
         {alerts.length === 0 ? (
           <Text style={styles.muted}>No active alerts.</Text>
@@ -197,5 +223,19 @@ const styles = StyleSheet.create({
   muted: {
     color: '#4f6b5b',
     marginTop: 3,
+  },
+  deleteBtn: {
+    marginTop: 8,
+    alignSelf: 'flex-start',
+    backgroundColor: '#fbe7e4',
+    borderColor: '#efc1b9',
+    borderWidth: 1,
+    borderRadius: 8,
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+  },
+  deleteBtnText: {
+    color: '#8c2f1f',
+    fontWeight: '700',
   },
 });

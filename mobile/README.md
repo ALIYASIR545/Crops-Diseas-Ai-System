@@ -19,14 +19,15 @@ This app is the mobile client for the Smart Crop Disease Detection System.
 
 ## Backend API URL
 
-Configured in:
+API base URL is now read from env variable:
 
-- `app/(tabs)/index.tsx`
-- `app/(tabs)/explore.tsx`
+- `EXPO_PUBLIC_API_BASE_URL`
 
-Current defaults:
+Configured for build profiles in:
+
+- `eas.json`
+
+Fallback local defaults (if env var not set):
 
 - Android emulator: `http://10.0.2.2:5000`
 - iOS/Web: `http://127.0.0.1:5000`
-
-If backend runs on another machine, replace with that machine's LAN IP.
